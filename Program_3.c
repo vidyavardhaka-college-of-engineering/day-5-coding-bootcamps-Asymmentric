@@ -13,6 +13,18 @@ int main()
 	scanf("%s", str);
 
 	//Write your code here
+  int n=0;
+ for(int i=0;str[i]!='\0';i++){
+     n++;
+   
+ }
+ for(int i=0;i<n;i++){
+   if(str[i]!=str[n-1-i]){
+     return 0;
+   }
+ }
+ printf("palindrome");
+
 	
 	return 0;
 }
